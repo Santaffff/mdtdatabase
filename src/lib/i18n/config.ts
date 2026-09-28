@@ -1,4 +1,4 @@
-export const defaultLocale = 'tr' as const;
+export const defaultLocale = 'en' as const;
 
 function parseLocales(value: string | undefined | null): string[] | null {
   if (!value) {
