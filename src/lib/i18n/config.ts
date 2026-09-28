@@ -25,7 +25,7 @@ function ensureDefaultLocale(locales: string[]): string[] {
   return locales;
 }
 
-const localesFromEnv = parseLocales(process.env.NEXT_PUBLIC_I18N_LOCALES);
+   const localesFromEnv = parseLocales(process.env.NEXT_PUBLIC_I18N_LOCALES) ?? ['en', 'es', 'sl', 'tr'];
 
 if (!localesFromEnv) {
   console.warn('NEXT_PUBLIC_I18N_LOCALES is not defined, falling back to default locale.');
